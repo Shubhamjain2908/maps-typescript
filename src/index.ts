@@ -1,11 +1,11 @@
-// import { Company } from './Company';
-// import { User } from './User';
-
-// const user = new User();
-// console.log('CKMB', user);
-
-// const company = new Company();
+import { Company } from './Company';
 // console.log('CKMB', company);
-
 import { CustomMap } from './CustomMap';
-new CustomMap('map');
+import { User } from './User';
+// console.log('CKMB', user);
+const company = new Company();
+
+const user = new User();
+const map = new CustomMap('map');
+map.addUserMarker(user);
+map.addUserMarker(company);
